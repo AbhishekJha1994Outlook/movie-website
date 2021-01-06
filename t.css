@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box
+  }
+html{
+    background-color:tan;
+}
+
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+   
+  }
+ 
+  .card:hover {
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    transform: translate3D(0, -2px, 0);
+  }
+  p{
+      overflow: hidden;
+      font-family: 'Redressed', cursive;
+      font-size: 1.3rem;
+
+  }
+  @media screen and (min-width: 600px) {
+    .card {
+      flex: 1 1 calc(50% - 2rem);
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .card {
+      flex: 1 1 calc(33% - 2rem);
+    }
+  }
+  @media only screen and (min-height: 600px) {
+    body { background-image: url(logo.png);
+    }
+    }
